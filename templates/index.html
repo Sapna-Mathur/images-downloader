@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images Downloader</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+<body>
+<h1>Images Downloader</h1>
+<div class="images">
+    <h2>Please enter the following information:</h2>
+    <form action="/download" method="post" id="images">
+        <label>What are you looking for? :</label><br>
+        <input type="text" name="serchterm" id="name", placeholder="Enter your search"><br><br>
+
+        <label>How many images do you want to download?</label><br>
+        <input type="text" name="number" id="name", placeholder="Enter number of images"><br><br>
+
+        <label>What's your E-mail Id?</label><br>
+        <input type="email" name="email" id="name", placeholder="Enter your email"><br><br>
+
+        <input type="submit" value="Download" id="submit">
+
+
+
+</form>
+</div>>
+</body>
+</html>
